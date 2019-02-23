@@ -16,6 +16,8 @@ ENV PATH /athenapdf-service/:$PATH
 
 COPY conf/ /athenapdf-service/conf/
 
+COPY fonts/ /usr/share/fonts/
+
 EXPOSE 8080
 
 CMD ["dumb-init", "weaver"]
